@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: #F8EDE3;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#3A3845;
+}
+
+.Search {
+    float: right;
+    margin-top: 12px;
+    border:solid 3px #F8EDE3;
+    outline: none;
+}
+
+.logIn {
+    float: right;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color:#F8EDE3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #65647C;
+}
+
+.logIn {
+    float: right;
+}
+
+.pageAbout {
+    display: flex;
+}
+
+.cardFilm{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 50px 0 0 50px;
+}
+
+.gallery {
+    width: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.gallery:hover {
+    border: 1px solid #65647C;
+}
+
+div.cardFilm img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery > a {
+    background-color: #f8ede3;
+}
+
+.gallery:hover::before {
+    top: 10px;
+    left: -10px;
+    transition: 0.15s;
+}
+  
+
+.cardAbout{
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+    margin: 50px 0 0 100px;     
+}

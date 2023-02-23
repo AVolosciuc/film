@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./logIn/logIn.html">
+    <title>Tracker</title>
 </head>
 <body>
     <div class="nav-bar">
         <ul class="nav-bar navList">
             <li><a href="#home" class="href">Home</a></li>
-            <li><a href="#Catalog">Catalog</a></li>
+            <li><a href="./catalogPage/catalog.html">Catalog</a></li>
             <li><a href="#mySerials" class="href">My Serials</a></li>
             <li><a href="#mySchedule">My Schedule</a></li>
-            <li  class="logIn"><a href="#LogIn">Log in</a></li>
+            <li  class="logIn"><a href="./logIn/logIn.html">Log in</a></li>
+            <input type="text" class="Search" placeholder="...">
+            
         </ul>
     </div>
 
@@ -23,37 +26,37 @@
         <h3 class="trendsWeek">Most popular this week</h3>
         <div class="trendsGallery">
             <div class="firstCard gallery">
-                <a href="./img/last_of_us.jpg">
+                <a href="./filmList/film.html">
                     <img src="./img/last_of_us.jpg">
                 </a>
                 <div class="firstNaming desc">Last Of Us</div>
             </div>
             <div class="secondCard gallery">
-                <a href="./img/the_good_doctor.jpg">
+                <a href="./filmList/film.html">
                     <img src="./img/the_good_doctor.jpg">
                 </a>
                 <div class="secondNaming desc">The good doctor</div>
             </div>
             <div class="thirdCard gallery">
-                <a href="./img/mayfair_witches.jpg">
+                <a href="./filmList/film.html">
                     <img src="./img/mayfair_witches.jpg">
                 </a>
                 <div class="thirdNaming desc">Mayfair Witches</div>
             </div>
             <div class="fourthCard gallery">
-                <a href="./img/the_rookie.jpg">
+                <a href="./filmList/film.html">
                     <img src="./img/the_rookie.jpg">
                 </a>
                 <div class="fourthNaming desc">The Rookie</div>
             </div>
             <div class="fiveCard gallery">
-                <a href="./img/ginny__georgia.jpg">
+                <a href="./filmList/film.html">
                     <img src="./img/ginny__georgia.jpg">
                 </a>
                 <div class="fiveNaming desc">Ginny and Georgia</div>
             </div>
             <div class="sixCard gallery">
-                <a href="./img/wednesday.jpg">
+                <a href="./filmList/film.html">
                     <img src="./img/wednesday.jpg">
                 </a>
                 <div class="sixNaming desc">Wednesday</div>
@@ -62,5 +65,56 @@
         </div>
     </div>
 
+    <div class="premiersList">
+        <h1 class="premiers">Premiers</h1>
+        <h3 class="soon">Soon</h3>
+
+        <table class="premiersTable">
+            <tr>
+                <th class="Poster">Poster</th>
+                <th class="Name">Name</th>
+                <th class="Date">Date</th>
+              </tr>
+              <tr>
+                <td><img class="tdImg" src="./img/ginny__georgia.jpg" ></td>
+                <td><a href="./filmList/film.html">Ginny and Georgia </a></td>
+                <td>5 Jenuary 2023</td>
+              </tr>
+              <tr>
+                <td><img class="tdImg" src="./img/last_of_us.jpg" ></td>
+                <td><a href="./filmList/film.html">Last of Us </a></td>
+                <td>10 February 2023</td>
+              </tr>
+              <tr>
+                <td><img class="tdImg" src="./img/mayfair_witches.jpg" ></td>
+                <td><a href="./filmList/film.html">Mayfair Witches </a></td>
+                <td>12 March 2023</td>
+              </tr>
+              <tr>
+                <td><img class="tdImg" src="./img/the_good_doctor.jpg" ></td>
+                <td><a href="./filmList/film.html">The good doctor </a></td>
+                <td>21 March 2023</td>
+              </tr>
+              <tr>
+                <td><img class="tdImg" src="./img/the_rookie.jpg" ></td>
+                <td><a href="./filmList/film.html">The Rookie </a></td>
+                <td>05 May 2023</td>
+              </tr>
+              <tr>
+                <td><img class="tdImg" src="./img/wednesday.jpg" ></td>
+                <td><a href="./filmList/film.html">Wednesday </a></td>
+                <td>18 July 2023</td>
+              </tr>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js.js"></script>
 </body>
 </html>

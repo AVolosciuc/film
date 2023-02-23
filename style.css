@@ -10,6 +10,14 @@ ul {
     overflow: hidden;
     background-color:#3A3845;
 }
+
+.Search {
+    float: right;
+    margin-top: 12px;
+    border:solid 3px #F8EDE3;
+    outline: none;
+}
+
 .logIn {
     float: right;
 }
@@ -39,12 +47,16 @@ li a:hover {
 }
 
 .trends{
- 
     margin-bottom: 0; 
 }
+
 .trends a{
     text-decoration: none;
     color: #3A3845;
+}
+
+.trends a:hover {
+    text-shadow:2px 2px 2px #65647C;
 }
 
 
@@ -52,7 +64,6 @@ li a:hover {
     color: #3A3845;
     opacity: 0.64;
     margin-top: 0;
-    
 }
 
 div.trendsGallery {
@@ -65,11 +76,24 @@ div.trendsGallery {
 .gallery {
     width: 170px;
     border: 1px solid #ccc;
-    /* margin-right: 16px; */
-    
+    position: relative;
 }
+
+.gallery::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 307px;
+    width: 170px;
+    background-color: #65647C;
+    top: 1px;
+    left: -1px;
+    transition: 0.15s;
+}
+
 .gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid #65647C;
 }
 
 div.trendsGallery img {
@@ -80,5 +104,67 @@ div.trendsGallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+    background-color: #f8ede3;
+}
+
+.gallery > a {
+    background-color: #f8ede3;
+}
+
+.gallery:hover::before {
+    top: 10px;
+    left: -10px;
+    transition: 0.15s;
+}
+
+.premiersList {
+    margin: 30px;
+    
+}
+
+.premiers {
+    margin-bottom: 0;
+    color: #3A3845;
+}
+
+.soon {
+    margin-top: 0;
+    color: #3A3845;
+    opacity: 0.64;
+}
+
+
+table, th, td {
+    width: 600px;
+    text-align: center;
+    border:1px solid #3A3845;
+}
+
+.premiersTable .Poster{
+    width: 1%;
+    height: fit-content;
+}
+
+.premiersTable .Name{
+    width: 50%;
+    height: fit-content;
+   
+}
+.premiersTable .Date{
+    width: 40%;
+    height: fit-content;
+}
+
+.premiersTable .tdImg {
+    max-width: 50px;
+    height: fit-content;
+    
+}
+
+.premiersTable td a {
+    text-decoration: none;
+    color: #3A3845 ;
+    font-weight: bold;
+    font-size: larger;
 }
 
